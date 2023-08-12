@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
+import "dotenv/config.js";
 
-mongoose.connect("mongodb+srv://bancodedados86:123@nodeapi.a8syvcg.mongodb.net/sport-line");
+mongoose.connect(process.env.DB_CONNECTION);
 
 const db = mongoose.connection;
 
